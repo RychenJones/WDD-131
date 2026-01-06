@@ -22,6 +22,7 @@ h2 {
 hr {
     line-height: 0.5em;
     color: lightgray;
+    margin-top: 5px;
 }
 p, li {
     margin: 35px 0;
