@@ -13,7 +13,7 @@ let para = document.querySelector('p');
 para.style.backgroundColor = ('#000000');
 
 let image = document.querySelector('img');
-image.setAttribute('src', 'logohtml.png');
+image.setAttribute('src', '../logohtml.png');
 
 
 let selectElem = document.getElementById('webdevlist');
