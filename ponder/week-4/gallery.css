@@ -39,6 +39,9 @@ dialog {
     padding: 3px 6px;
     font-size: 1.5em;
 }
+.close-viewer:hover {
+    background-color: darkgrey;
+}
 
 @media screen and (min-width: 700px) {
     .gallery {
