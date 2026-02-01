@@ -7,9 +7,6 @@ header {
     margin-top: 0;
     text-align: center;
 }
-nav {
-    display: none;
-}
 h1 {
     margin: 0px;
     padding: 30px;
@@ -21,7 +18,12 @@ h3 {
     padding-bottom: 10px;
 }
 header a {
-    color: white;;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+.hide {
+    display: none;
 }
 #content {
     background-color: rgb(144, 144, 144);
@@ -65,6 +67,32 @@ footer p {
 }
 
 
+
+dialog img {
+    width: 80%;
+    max-width: 800px;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 10%;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
+.close-viewer:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+
+
 @media screen and (min-width: 900px) {
     #images {
         grid-template-columns: 1fr 1fr;
@@ -77,12 +105,13 @@ footer p {
     header h3 {
         display: none;
     }
-    nav {
+    .hide {
         display: block;
         padding-bottom: 10px;
     }
     nav a {
         font-size: 1.1rem;
         margin: 0 15px;
+        display: inline;
     }
 }

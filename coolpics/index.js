@@ -1,11 +1,19 @@
+const h3 = document.querySelector('h3');
+const menu = document.querySelector('nav');
 
-const gallery = document.querySelector('.gallery');
+h3.addEventListener('click', showMenu);
+
+function showMenu() {
+    menu.classList.toggle('hide');
+}
+
+const images = document.querySelector('#images');
 const modal = document.querySelector('dialog');
 const modalImage = modal.querySelector('img');
 const closeButton = modal.querySelector('.close-viewer');
 
 // Event listener for opening the modal
-gallery.addEventListener('click', openModal);
+images.addEventListener('click', openModal);
 
 function openModal(e) {
 // Code to show modal  - Use event parameter 'e'   
@@ -33,3 +41,4 @@ modal.addEventListener('click', (event) => {
     }
 });
         
+
